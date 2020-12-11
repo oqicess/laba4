@@ -1,0 +1,158 @@
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>4 лабораторная</title> 
+<script type='text/javascript'>
+
+function zad1() {
+alert("Hello World");
+}
+
+function zad2() { 
+let x= 5, y= 10, t; 
+t=x+y; 
+alert(x + "+" + y + "=" + t); 
+} 
+
+function zad3() { 
+const x=5 
+let y= 10, z=200 , t; 
+t=x+y+z; 
+alert(x + "+" + y + "+" + z + " = " + t); 
+} 
+
+function zad4() { 
+let x=2, y='Привет'; 
+alert(y + "/" + x + "=" + y/x); 
+} 
+
+function zad5() { 
+let x='Привет', y=',м', t='ир!'; 
+alert(x + "+" + y + "+" + t + " = " + y+x+t); 
+} 
+
+function zad6() { 
+let x; 
+alert(x); 
+} 
+
+function zad7() { 
+let x=false; 
+alert(x);
+x=String(x);
+alert(x);
+alert(typeof x);
+let k1='1000', k2='10', r;
+r=k1/k2;
+alert(k1 + "/" + k2 + " = " + r);
+alert(typeof r);
+let k3='777', k4=333;
+alert(k3+k4);
+}
+
+function zad8() { 
+let a=1, b=-8, c=12; 
+var d=b*b-4*a*c; 
+var x1,x2; 
+x1=(-b+Math.sqrt(d))/(2*a); 
+x2=(-b-Math.sqrt(d))/(2*a); 
+alert("x1 = " + x1 + ", " + "x2 = " + x2); 
+} 
+
+function zad9() { 
+alert("Диапазон от 1 до 5"); 
+alert("Шаг 1"); 
+for (let x=1; x<6; x++){ 
+y=x*x+x*x*x-3*x; 
+alert ("Значения функции " + y) 
+} 
+
+} 
+function zad10(){ 
+var arr=[]; 
+	for(var i=0; i<5; i++){ 
+		arr[i]=Math.random()*(5-1)+1 
+	} 
+b=0; 
+	for(var i=0; i<5; i++){ 
+		b+=arr[i]*arr[i]; 
+	alert(b); 
+} 
+} 
+
+function zad11(){ 
+let a=57; 
+alert(a); 
+alert(a.toString([2])); 
+} 
+
+function zad12(){ 
+var a=['ананас ', 'апельсин ', 'арка'], b=0; 
+alert('ананас ' + 'апельсин '+ 'арка'); 
+for (i=0; i<=2; i++){
+	for (n=0; n<=a[i].length; n++) {
+		if (a[i].charAt(n)=='а') 
+			b=b+1;
+	}
+}
+alert(b);
+}
+
+function zad13() {
+alert('Иванов Иван, Петров Пётр, Ульянова Ульяна');
+let a='Иванов Иван, Петров Пётр, Ульянова Ульяна';
+let r= ',', i, array=a.split(r);
+	for (i=0; i < array.length; i++)
+		{
+		alert(array[i] + '\n')
+		}
+}
+
+
+function zad14() {
+alert( " Привет, мир! " );
+}
+
+function zad15() {
+	let a='any';
+	function user()
+	{
+		let a='som';
+		alert(a);
+	}
+	user();
+}
+
+function zad16() {
+alert(dr(2,5));
+}
+
+function zad16() {
+let a=5, b=10;
+var sum = a + b;
+alert(sum);
+return(sum)
+}
+</script>
+</head> 
+<body> 
+<form>
+<input value='Задание 1' onclick='zad1()' type='button' ><br> 
+<input value='Задание 2' onclick="zad2()" type='button' ><br> 
+<input value='Задание 3' onclick="zad3()" type='button' ><br> 
+<input value='Задание 4' onclick="zad4()" type='button' ><br> 
+<input value='Задание 5' onclick="zad5()" type='button' ><br> 
+<input value='Задание 6' onclick="zad6()" type='button' ><br> 
+<input value='Задание 7' onclick="zad7()" type='button' ><br> 
+<input value='Задание 8' onclick="zad8()" type='button' ><br> 
+<input value='Задание 9' onclick="zad9()" type='button' ><br> 
+<input value='Задание 10' onclick="zad10()" type='button' ><br>
+<input value='Задание 11' onclick="zad11()" type='button' ><br>
+<input value='Задание 12' onclick="zad12()" type='button' ><br>
+<input value='Задание 13' onclick="zad13()" type='button' ><br>
+<input value='Задание 14' onclick="zad14()" type='button' ><br>
+<input value='Задание 15' onclick="zad15()" type='button' ><br>
+<input value='Задание 16' onclick="zad16()" type='button' ><br>
+</form>
+</body> 
+</html>
