@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>16 задание 4 лабы</title>
+	<meta charset="utf-8"> 
+</head>
+<script type="text/javascript">
+
+let a = parseInt(prompt("Введите 1 число")), b = parseInt(prompt("Введите 2 число")), s;
+function sum()
+{
+	return(a+b);
+}
+s=sum();
+alert(s)
+</script>
+<body>
+</body>
+</html>
